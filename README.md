@@ -1,3 +1,20 @@
+# App Instruction 
+
+Enter item name and press the + button to add the item list.
+
+By pressing cross button you can delete item from list.
+
+Press on edit mode button and update the item name.
+
+In the App at top level contain three button.
+ 1-refresh
+ 2-reset
+ 3-hashtag(highlighted items)
+by pressing each button  perform operations individual.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +85,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# item-list

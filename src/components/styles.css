@@ -1,0 +1,114 @@
+
+/* url("<link rel="preconnect" href="https://fonts.gstatic.com">")
+url("<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">") */
+
+body {
+    background-color: #43aa8b;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Noto Sans JP', sans-serif;
+   
+}
+
+.buttonsdiv{
+  
+}
+
+.refreshbtn{
+ margin: 10px;
+ padding:5px;
+}
+
+.resetbtn{
+   margin-left: 20px;
+   padding:5px;
+}
+.hashtagbtn{
+  margin:10px;
+  padding: 5px;
+}
+
+.listeItems{
+  margin: 10px;
+}
+
+
+
+.main_div{
+  max-width: 300px;
+  min-height: 600px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin: auto;
+  justify-content: center;
+
+}
+
+.resetTag{
+  margin-left: 200px;
+}
+
+.center_div{
+  border-radius: 15px;
+  margin: 20px;
+  
+}
+
+h1{
+ background-color: deepskyblue;
+ color: white;
+ font-family: 'Gloria Hallelujah', cursive;
+ 
+}
+
+
+
+input{
+  margin: 0px;
+  width: 55%;
+  height: 30px;
+  font-size: 20px;
+  outline: none;
+  border: white;
+  border-bottom: 2px solid #8566aa;
+  
+}
+
+li{
+  text-transform: capitalize;
+  font-size: 20px;
+  display: flex;
+  text-align: left;
+  mask-type: alpha;
+  align-items: center;
+
+
+
+}
+
+button{
+  color: green;
+}
+
+.todo_style{
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+button:hover{
+  transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -o-transform: scale(1.10);
+}
+
+

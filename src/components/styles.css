@@ -7,38 +7,92 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 2%;
     font-family: 'Noto Sans JP', sans-serif;
    
 }
 
-.buttonsdiv{
-  
-}
 
-.refreshbtn{
- margin: 10px;
- padding:5px;
-}
-
-.resetbtn{
-   margin-left: 20px;
-   padding:5px;
-}
-.hashtagbtn{
-  margin:10px;
-  padding: 5px;
-}
-
-.listeItems{
+.refreshdiv{
+  position: relative;
+  top: 42px;
   margin: 10px;
+  padding: 5px;
+  display: flex;
+  max-width: fit-content;
+  max-height: fit-content;
+  text-align: center;
+  border-radius: 5%;
+  background-color: green;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.refreshdiv:hover{
+  transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -o-transform: scale(1.10);
+}
+
+.resetdiv{
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  max-width: fit-content;
+  max-height: fit-content;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 72%;
+  background-color: green;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+
+.resetdiv:hover{
+  transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -o-transform: scale(1.10);
+}
+
+.hashtagdiv{
+  position: fixed;
+  top: 70px;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  max-width: fit-content;
+  min-height: fit-content;
+  text-align: center;
+  border-radius: 5%;
+  margin-left: 19%;
+  background-color: green;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%; 
+}
+
+.hashtagdiv:hover{
+  transform: scale(1.10);
+  -webkit-transform: scale(1.10);
+  -moz-transform: scale(1.10);
+  -ms-transform: scale(1.10);
+  -o-transform: scale(1.10);
 }
 
 
 
 .main_div{
-  max-width: 300px;
-  min-height: 600px;
+  max-width: 600px;
+  min-height: 500px;
   border: 1px solid black;
   text-align: center;
   background-color: white;
@@ -63,7 +117,6 @@ h1{
  background-color: deepskyblue;
  color: white;
  font-family: 'Gloria Hallelujah', cursive;
- 
 }
 
 
@@ -86,9 +139,7 @@ li{
   text-align: left;
   mask-type: alpha;
   align-items: center;
-
-
-
+  padding: 5px;
 }
 
 button{
@@ -97,7 +148,8 @@ button{
 
 .todo_style{
   display: flex;
-  padding: 10px;
+  margin-left: 12%;
+  padding: 2px;
   flex-direction: row;
   justify-content: left;
   align-items: center;

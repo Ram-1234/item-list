@@ -11,9 +11,10 @@ const TodoList=(props)=>{
         <div className="todo_style">
         <CancelIcon onClick={()=>{
             props.onSelect(props.id);
-        }}/>   
-         <li style={{color:`${props.textColor}`}} className='listeItems' >{props.text}</li>
+        }}/>  
+         <li style={{color:`${props.textColor}`}} className='listeItems' contentEditable={props.edit} autoFocus={props.edit} >{props.text}</li>
          <EditIcon onClick={()=>{props.onSelectItem(props.id)}}/>
+        
         </div>
         </>
     )  

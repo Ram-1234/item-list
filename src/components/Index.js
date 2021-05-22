@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import TodoList from './TodoList'; 
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+import RefreshIcon from '@material-ui/icons/Refresh';
+import ReplayIcon from '@material-ui/icons/Replay';
+import LabelImportantIcon from '@material-ui/icons/LabelImportant';
 import './styles.css'
 
 function Index() {
   const [inputList, setInput]=useState("");
   const [Items,setItems]=useState([]);
-  //const [Items1,setItems1]=useState([]);
+  const [editable,setEdit]=useState(false);
+
 
   const  itemEvent=(event)=>{ 
-    setInput(event.target.value);
+        setInput(event.target.value);
   };
 
   const listofItem=()=>{
@@ -30,11 +34,11 @@ function Index() {
 }
 
 const editItems=(id)=>{
-  document.getElementById("id").style.contentEditable="true"
+  setEdit(true);
 }
 
 const resetButton=()=>{
-  setItems([])
+  setInput(Items);
 }
 
 
@@ -51,13 +55,22 @@ const hashButton=()=>{
     <>
     <div className="main_div">
     <div className="buttonsdiv">
-    <button className="refreshbtn" onClick={refreshButton}>refresh</button>
-    <button className="resetbtn" onClick={resetButton}>reset</button><br/>
-    <button className="hashtagbtn" onClick={hashButton}>hashtag</button>
+    <div>
+    <div className="refreshdiv" onClick={refreshButton} >
+    <ReplayIcon /> <span>refresh items</span>
+    </div>
+    <div className="resetdiv" onClick={resetButton}>
+    <RefreshIcon  /> <span>reset all items</span>
+    </div>
+     <div className="hashtagdiv" onClick={hashButton} >
+     <LabelImportantIcon /><span>hashtag items</span>
+     </div>
+    </div>
+
     </div>
       <div className="center_div">
-      <div><h1>Item List</h1></div>
-        <input type="text" placeholder="Add a Item" onChange={itemEvent} value={inputList}/>
+      <div><h1>To do List</h1></div>
+        <input type="text" placeholder="add a item" onChange={itemEvent} value={inputList}/>
         <button onClick={listofItem}>
         <AddCircleIcon/>
         </button>
@@ -65,11 +78,12 @@ const hashButton=()=>{
         <ul>
           {/* <li>{inputList}</li> */}
           {Items.map((itemval,index)=>{  
+        if(itemval.length>1){
         if(itemval[0]==='#') 
-        return <TodoList key={index} textColor="#ff006e" id={index} onSelect={deleteItem} onSelectItem={editItems} text={itemval} />;
+        return <TodoList key={index} textColor="#ff006e" id={index} onSelect={deleteItem} onSelectItem={editItems} text={itemval} edit={editable} />;
         else
-         return <TodoList key={index} textColor="black" id={index} onSelect={deleteItem}  onSelectItem={editItems} text={itemval} />;
-          })}
+         return <TodoList key={index} textColor="black" id={index} onSelect={deleteItem}  onSelectItem={editItems} text={itemval} edit={editable} />;
+        }})}
         </ul>
       </div>
 

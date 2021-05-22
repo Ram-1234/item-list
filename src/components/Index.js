@@ -34,11 +34,11 @@ function Index() {
 }
 
 const editItems=(id)=>{
-  setEdit(true);
+  setEdit(true)
 }
 
 const resetButton=()=>{
-  setInput(Items);
+  setItems([])
 }
 
 
@@ -55,7 +55,6 @@ const hashButton=()=>{
     <>
     <div className="main_div">
     <div className="buttonsdiv">
-    <div>
     <div className="refreshdiv" onClick={refreshButton} >
     <ReplayIcon /> <span>refresh items</span>
     </div>
@@ -65,8 +64,7 @@ const hashButton=()=>{
      <div className="hashtagdiv" onClick={hashButton} >
      <LabelImportantIcon /><span>hashtag items</span>
      </div>
-    </div>
-
+    
     </div>
       <div className="center_div">
       <div><h1>To do List</h1></div>

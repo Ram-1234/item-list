@@ -89,7 +89,7 @@ body {
 
 
 .main_div{
-  max-width: 600px;
+  width: 600px;
   min-height: 500px;
   border: 1px solid black;
   text-align: center;
